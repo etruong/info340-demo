@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>AJAX Demo</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="./ajax-demo.css" />
+</head>
+
+<body>
+  <h1 class="jumbotron">AJAX Demo</h1>
+  <div class="container">
+    <p>Search for a movie or tv series below:</p>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Search Here" />
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button" id="search">Search</button>
+      </div>
+    </div>
+    <div id="results">
+    </div>
+  </div>
+
+  <!-- Script file -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.1.1/es6-promise.auto.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.4/fetch.min.js"></script>
+  <script src="api-key.js"></script>
+  <script src="ajax-demo.js"></script>
+</body>
+
+</html>
