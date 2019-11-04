@@ -6,3 +6,11 @@
     text-align: center;
     margin-top: 10px;
 }
+
+nav {
+    background-color: lavender;
+}
+
+main {
+    background-color: lightyellow;
+}
