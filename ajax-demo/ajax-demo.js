@@ -6,30 +6,11 @@ const API_URL = "http://www.omdbapi.com/?apikey=" + API_KEY + "&t=";
 let searchBtn = document.querySelector("#search");
 searchBtn.addEventListener("click", function(e) {
     e.preventDefault();
-    let inputVal = document.querySelector("input").value;
-    document.querySelector("#results").innerHTML = "";
-    fetchMovie(inputVal);
+
 });
 
 function fetchMovie(movie) {
 
-    let url = API_URL + movie;
-    fetch(url)
-        .then(function(response) {
-            return response.json();
-        })
-        .then(function(data) {
-            console.log(data);
-            if (data.Error != null) {
-                throw new Error(data.Error);
-            } else {
-                generateContent(data);
-            }
-        })
-        .catch(function(err) {
-            handleError(err);
-            console.log(err);
-        });
 }
 
 function handleError(err) {
